@@ -1,0 +1,55 @@
+@import './variables.css';
+
+
+* {
+    color: var(--color-black-200);
+}
+::-webkit-scrollbar {
+    width: 6px;
+    height: 4px;
+}
+
+::-webkit-scrollbar-track {
+    background: rgb(219,219,219);
+    border-radius: 10px;
+  }
+::-webkit-scrollbar-thumb {
+    background: var(--color-primary);
+    border-radius: 10px;
+}
+
+.button {
+    font-size: 15px;
+    line-height: 100%;
+    padding: 16px 32px;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: var(--color-primary);
+    font-weight: 500;
+    position: relative;
+    display: inline-flex;
+    z-index: 1;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.button::before {
+    position: absolute;
+    left: 50%;
+    bottom: 110%;
+    content: "";
+    width: 300%;
+    height: 300%;
+    border-radius: 50%;
+    background-color: var(--color-black-700);
+    transform: translateX(-50%);
+    transition-duration: 800ms;
+    z-index: -1;
+    cursor: pointer;
+   
+}
+
+.button:hover::before {
+    bottom: -40%;
+}
+  
