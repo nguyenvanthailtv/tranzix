@@ -1,13 +1,35 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap");
 :root {
-    --color-primary: #FA4216;
+  --color-primary: #fa4216;
 
-    --color-black-700: #141417;
-    --color-black-600: #200903;
-    --color-black-200: #808080;
+  --color-black-700: #141417;
+  --color-black-600: #200903;
+  --color-black-200: #808080;
 
-    --font-league-spartan: 'League Spartan', 'serif';
-    --font-roboto: 'Roboto', 'serif';
+  --color-orange-500: #fb5932;
 
+  --font-league-spartan: "League Spartan", "serif";
+  --font-roboto: "Roboto", "serif";
+
+  --padding-section: 80px;
+
+  --font-size-title: 36px;
+  --line-height-title: 44px;
 }
+
+@media screen and (max-width: 768px) and (min-width: 481px) {
+  :root {
+    --padding-section: 40px;
+    --font-size-title: 30px;
+    --line-height-title: 36px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+    :root {
+        --padding-section: 40px;
+      --font-size-title: 24px;
+      --line-height-title: 30px;
+    }
+  }

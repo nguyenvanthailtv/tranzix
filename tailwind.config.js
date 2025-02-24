@@ -17,8 +17,32 @@ export default {
 
     extend: {
       colors: {
-        'primary': 'var(--color-primary)',
+        primary: 'var(--color-primary)',
+        black: {
+          200: 'var(--color-black-200)',
+          600: 'var(--color-black-600)',
+          700: 'var(--color-black-700)',
+        },
+        orange: {
+          500: 'var(--color-orange-500)'
+        }
       },
+
+      container: {
+        padding: {
+          DEFAULT: '1rem',
+        }
+      },
+
+      fontSize: {
+        title: 'var(--font-size-title)'
+      },
+      lineHeight: {
+        title: 'var(--line-height-title)'
+      },
+      padding: {
+        section: 'var(--padding-section)'
+      }
 
     },
   },
